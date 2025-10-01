@@ -1,11 +1,37 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { LoginComponent } from './pages/login/login.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
-    { path: '**', redirectTo: 'home'},
+    {
+        path: '',
+        loadComponent: () => import('./shared/components/layout/layout.component'),
+        children: [
+            {   
+                path: 'dashboard', 
+                loadComponent: () => import('./business/dashboard/dashboard.component')
 
+            },
+            {   
+                path: 'profile', 
+                loadComponent: () => import('./business/profile/profile.component')
+            },
+            {   
+                path: 'tables', 
+                loadComponent: () => import('./business/tables/tables.component')
+            },
+            {
+                path: '',
+                redirectTo: 'dashboard',
+                pathMatch: 'full' 
+            }
+        ]
+    },
+    {
+        path: 'sign-up',
+        loadComponent: () =>
+        import('./pages/login/login.component').then(m => m.LoginComponent)
+    },
+    {
+        path: '**',
+        redirectTo: 'dashboard'
+    }
 ];
-

@@ -1,0 +1,82 @@
+<!-- Sección de Reuniones -->
+<div class="mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3">
+  <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md overflow-hidden xl:col-span-2">
+    <!-- Encabezado -->
+    <div class="flex items-center justify-between p-6">
+      <div>
+        <h6 class="block font-sans text-base font-semibold text-blue-gray-900 mb-1">Reuniones</h6>
+        <p class="font-sans text-sm text-blue-gray-600">
+          <strong>3 programadas</strong> para esta semana
+        </p>
+      </div>
+      <button
+        class="px-4 py-2 text-sm rounded-lg bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow hover:shadow-lg hover:shadow-blue-500/40">
+        + Nueva Reunión
+      </button>
+    </div>
+
+    <!-- Tabla -->
+    <div class="p-6 overflow-x-scroll px-0 pt-0 pb-2">
+      <table class="w-full min-w-[640px] table-auto">
+        <thead>
+          <tr>
+            <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+              <p class="text-[11px] font-medium uppercase text-blue-gray-400">Tema</p>
+            </th>
+            <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+              <p class="text-[11px] font-medium uppercase text-blue-gray-400">Fecha</p>
+            </th>
+            <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+              <p class="text-[11px] font-medium uppercase text-blue-gray-400">Participantes</p>
+            </th>
+            <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+              <p class="text-[11px] font-medium uppercase text-blue-gray-400">Estado</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-3 px-5 border-b border-blue-gray-50">Planificación Sprint</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">30/09/2025 - 10:00 AM</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">7</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">
+              <span class="text-yellow-500 font-bold">Pendiente</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-5 border-b border-blue-gray-50">Revisión Proyecto</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">01/10/2025 - 03:00 PM</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">10</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">
+              <span class="text-blue-500 font-bold">En curso</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 px-5 border-b border-blue-gray-50">Seguimiento Ventas</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">02/10/2025 - 09:00 AM</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">5</td>
+            <td class="py-3 px-5 border-b border-blue-gray-50">
+              <span class="text-green-500 font-bold">Finalizada</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Resumen de Reuniones -->
+  <div class="flex flex-col gap-4">
+    <div class="p-4 bg-gradient-to-tr from-blue-600 to-blue-400 rounded-xl text-white shadow">
+      <h3 class="text-lg font-bold">Reuniones Totales</h3>
+      <p class="text-2xl">45</p>
+    </div>
+    <div class="p-4 bg-gradient-to-tr from-green-600 to-green-400 rounded-xl text-white shadow">
+      <h3 class="text-lg font-bold">Completadas</h3>
+      <p class="text-2xl">30</p>
+    </div>
+    <div class="p-4 bg-gradient-to-tr from-yellow-600 to-yellow-400 rounded-xl text-white shadow">
+      <h3 class="text-lg font-bold">Pendientes</h3>
+      <p class="text-2xl">15</p>
+    </div>
+  </div>
+</div>
